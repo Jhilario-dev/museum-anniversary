@@ -1,0 +1,94 @@
+
+  
+  /* Contenedor de imágenes flotantes */
+  .floating-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+  }
+  
+  /* Imágenes flotantes */
+  .floating-img {
+    width: 200px;
+    height: auto;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+  }
+  
+  .floating-img:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+  
+  /* Estilos del modal */
+  .modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%;
+    max-height: 90%;
+  }
+  
+  .modal-img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .modal-close-btn {
+    width: 50%;
+    background-color: #4383f2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  
+  .modal-close-btn:hover {
+    background-color: rgb(76, 173, 248);
+  }
+
+  :root {
+    --primary-color: #f8f4f9;
+    --accent-color: #6c63ff;
+    --text-color: #333333;
+    --background-color: #54ade8;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  a {
+    color: var(--accent-color);
+  }
+  
+  button {
+    background-color: var(--accent-color);
+    color: white;
+    border-radius: 5px;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
