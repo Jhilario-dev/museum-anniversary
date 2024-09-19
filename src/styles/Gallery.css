@@ -1,0 +1,37 @@
+
+
+  .gallery {
+    background-color: #82c0e9;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .floating-images {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 50px; /* Espacio entre cada grupo de imágenes */
+    align-items: center;
+  }
+  
+  .image-pair {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre las dos imágenes del mismo grupo */
+    width: 100%; /* Asegura que el div ocupe todo el ancho disponible */
+    padding: 20px; /* Agrega padding para asegurarte de que el div sea visible */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+  }
+  
+  .div-back{
+    background-color:  #82c0e9;
+    height: 100%;
+    width: 100%;
+    margin: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  

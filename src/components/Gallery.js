@@ -4,21 +4,19 @@ import Modal from 'react-modal';
 import PhotoFrame from './PhotoFrame';
 import { museumData } from '../data';
 import backgroundImage from '../assets/images/background.jpg';
-import '../ParallaxGallery.css' 
+import '../styles/Gallery.css' 
 
 const parallaxStyle = {
   backgroundImage: `url(${backgroundImage})`,
   minHeight: '600px',
-    backgroundAttachment: 'fixed',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
-    position: 'relative',
-    overflow: 'hidden',
-    padding: '50px'
+  backgroundAttachment: 'fixed',
+  backgroundPosition: 'center',
+  backgroundRepeat: 'no-repeat',
+  backgroundSize: 'cover',
+  position: 'relative',
+  overflow: 'hidden',
+  padding: '50px'
 };
-
-// Modal.setAppElement('#root');
 
 const Gallery = () => {
   const { id } = useParams();  // Capturamos el id desde la URL
@@ -30,17 +28,28 @@ const Gallery = () => {
 
   return (
     <div className="gallery">
-      <h2>{gallery.title}</h2>
-      <div style={parallaxStyle}>
-
-        <div className="floating-images">
-        {gallery.photos.map((photo, index) => (
-          <PhotoFrame key={index} photo={photo} />
-        ))}
-      </div>
-      
-      </div>
+  <h2>{gallery.title}</h2>
+  <div style={parallaxStyle}>
+    
+    <div className="floating-images">
+      {gallery.photos.map((photo, idx) => {
+        // Creamos un nuevo div por cada dos imágenes
+        if (idx % 2 === 0) {
+          return (
+            <div className="div-back">
+            <div className="image-pair" key={idx}>
+              <PhotoFrame photo={gallery.photos[idx]} />
+              {gallery.photos[idx + 1] && <PhotoFrame photo={gallery.photos[idx + 1]} />}
+            </div>
+            </div>
+          );
+        }
+        return null;
+      })}
     </div>
+
+  </div>
+</div>
   );
 };
 

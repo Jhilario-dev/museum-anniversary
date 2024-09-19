@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Museum from './pages/Museum';
 import Navbar from './components/Navbar';
 import Gallery from './components/Gallery';
-import './App.css';
+import './styles/App.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
