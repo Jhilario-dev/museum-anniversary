@@ -1,15 +1,48 @@
-.navbar {
-    position: fixed;
-    top: 0;
+  /* .navbar {
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(5px);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    padding: 10px 20px;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 2px 5px;
+    background-color:black;
+    text-align: right;
+  } */
+
+  .navbar {
+    background-color: #c9b977;
+    padding: 10px;
+    box-shadow: 0 2px 5px;
   }
   
-  nav ul {
+  /* Lista del navbar */
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  .navbar li {
+    margin-right: 20px; /* Espacio entre las opciones */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto de transición */
+  }
+  
+  /* Estilo de los enlaces del navbar */
+  .navbar li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+    transition: text-shadow 0.3s ease;
+  }
+  
+  .navbar li:hover a {
+    transform: scale(1.1); /* Agranda el texto un 10% */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6); /* Difuminado en las letras */
+  }
+  
+  /* nav ul {
     list-style: none;
     padding: 0;
   }
@@ -20,6 +53,6 @@
   }
   
   nav ul li a {
-    text-decoration: double;
-    color: #333;
-  }
+    text-decoration: underline;
+    color: white;
+  } */

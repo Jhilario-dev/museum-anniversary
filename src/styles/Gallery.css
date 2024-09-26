@@ -1,9 +1,7 @@
 
 
   .gallery {
-    background-color: #82c0e9;
     padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   }
 
   .floating-images {
@@ -25,7 +23,7 @@
   }
   
   .div-back{
-    background-color:  #82c0e9;
+    background-color:  #ecdda2;
     height: 100%;
     width: 100%;
     margin: 25px;
@@ -33,5 +31,9 @@
     padding-right: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+
+  h2 {
+    color: #ecdda2;
   }
   
