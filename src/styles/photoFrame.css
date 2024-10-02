@@ -101,7 +101,7 @@
   
   .modal-close-btn {
     width: 50%;
-    background-color: #4383f2;
+    background-color: #19191a;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -111,5 +111,6 @@
   }
   
   .modal-close-btn:hover {
-    background-color: rgb(76, 173, 248);
+    background-color: #c9b977;
+    color: #333;
   }

@@ -6,6 +6,7 @@ import './styles/App.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -24,8 +25,11 @@ function App() {
           {/* Ruta dinámica para cada galería */}
           <Route path="/gallery/:id" element={<Gallery />} />
         </Routes>
+        
       </div>
+      <Footer/>
     </Router>
+    
   );
 }
 

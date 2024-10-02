@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  flex: 1; /* Este hace que el contenido principal se expanda para llenar el espacio disponible */
 }
 
 .App-logo {
@@ -69,6 +70,17 @@ button {
 
 html {
   scroll-behavior: smooth;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Hace que el contenido ocupe al menos toda la altura de la ventana */
 }
 
 @keyframes fadeIn {

@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import Modal from 'react-modal';
 import PhotoFrame from './PhotoFrame';
 import { museumData } from '../data';
-import backgroundImage from '../assets/images/background.jpg';
+import backgroundImage from '../assets/images/background2.jpg';
 import '../styles/Gallery.css' 
 
 const parallaxStyle = {
